@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Faryal Dar – HR operations, hiring and employee relations</title>
+<meta name="description" content="Portfolio of Faryal Dar, an HR professional in Karachi with 4+ years across market research, IT and BPO.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #F3F6F4;
+  --surface: #FFFFFF;
+  --ink: #14211E;
+  --muted: #4B5D58;
+  --line: #D3DDD9;
+  --teal: #0E6B5C;
+  --teal-soft: #DCEEE9;
+  --tang: #E4531F;
+  --on-teal: #FFFFFF;
+  --head: "Bricolage Grotesque", "Trebuchet MS", "Segoe UI", sans-serif;
+  --body: "Instrument Sans", "Segoe UI", Helvetica, Arial, sans-serif;
+  box-sizing: border-box;
+  padding-top: env(safe-area-inset-top, 0px);
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0F1917; --surface: #16241F; --ink: #E8F0ED; --muted: #A3B5AF;
+    --line: #2A3B36; --teal: #5FD6BA; --teal-soft: #1B332D; --tang: #FF8A5B; --on-teal: #0F1917;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0F1917; --surface: #16241F; --ink: #E8F0ED; --muted: #A3B5AF;
+  --line: #2A3B36; --teal: #5FD6BA; --teal-soft: #1B332D; --tang: #FF8A5B; --on-teal: #0F1917;
+}
+html { scroll-padding-top: env(safe-area-inset-top, 0px); scroll-behavior: smooth; }
+*, *::before, *::after { box-sizing: border-box; }
+body {
+  margin: 0; background: var(--bg); color: var(--ink);
+  font: 400 1.0625rem/1.65 var(--body);
+  -webkit-font-smoothing: antialiased;
+}
+a { color: inherit; }
+:focus-visible { outline: 3px solid var(--tang); outline-offset: 3px; border-radius: 4px; }
+.wrap { max-width: 68rem; margin: 0 auto; padding: 0 1.5rem; }
+
+/* header */
+.top { display: flex; justify-content: space-between; align-items: center; padding: 1.25rem 0; gap: 1rem; flex-wrap: wrap; }
+.top .mark { font: 800 1.15rem/1 var(--head); letter-spacing: -0.01em; text-decoration: none; }
+.top nav { display: flex; gap: 1.25rem; flex-wrap: wrap; }
+.top nav a { text-decoration: none; color: var(--muted); font-weight: 500; font-size: 0.95rem; padding: 0.25rem 0; border-bottom: 2px solid transparent; }
+.top nav a:hover { color: var(--ink); border-color: var(--tang); }
+
+/* hero */
+.hero { padding: clamp(2.5rem, 7vw, 5.5rem) 0 clamp(2rem, 5vw, 3.5rem); }
+h1 {
+  font: 800 clamp(3.4rem, 12vw, 8.5rem)/0.92 var(--head);
+  letter-spacing: -0.04em; margin: 0 0 1.75rem;
+}
+.lede { font-size: clamp(1.2rem, 2.4vw, 1.6rem); line-height: 1.45; max-width: 36rem; margin: 0 0 1.75rem; color: var(--ink); }
+.cta { display: flex; gap: 0.75rem; flex-wrap: wrap; }
+.btn {
+  display: inline-block; text-decoration: none; font-weight: 600; padding: 0.8rem 1.35rem;
+  border-radius: 999px; border: 2px solid var(--ink); transition: background 0.15s, color 0.15s;
+}
+.btn.primary { background: var(--teal); border-color: var(--teal); color: var(--on-teal); }
+.btn.primary:hover { filter: brightness(1.08); }
+.btn.ghost:hover { background: var(--ink); color: var(--bg); }
+.facts { display: flex; flex-wrap: wrap; gap: 0.5rem 2.25rem; margin: 2.5rem 0 0; padding: 1.25rem 0 0; border-top: 1px solid var(--line); color: var(--muted); font-size: 0.98rem; }
+.facts div { max-width: 16rem; }
+.facts dt { font-weight: 600; color: var(--ink); }
+.facts dd { margin: 0; }
+
+/* section scaffolding */
+section { padding: clamp(2.5rem, 6vw, 4.5rem) 0; }
+h2 { font: 700 clamp(1.9rem, 4.5vw, 3rem)/1.05 var(--head); letter-spacing: -0.025em; margin: 0 0 0.75rem; }
+.sub { color: var(--muted); max-width: 38rem; margin: 0 0 2rem; }
+
+/* core focus */
+.focus { background: var(--teal); color: var(--on-teal); padding: clamp(2.25rem, 5vw, 3.5rem) 0; }
+.focus h2 { color: var(--on-teal); margin-bottom: 1.75rem; }
+.focus-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr)); gap: 2rem 2.5rem; }
+.focus-grid > div { border-top: 3px solid var(--on-teal); padding-top: 1rem; }
+.focus-grid h3 { font: 700 1.35rem/1.2 var(--head); letter-spacing: -0.015em; margin: 0 0 0.5rem; }
+.focus-grid p { margin: 0; opacity: 0.92; }
+
+/* hiring cycle */
+.cycle { background: var(--surface); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.stages { list-style: none; margin: 0 0 1.5rem; padding: 0; display: grid; grid-template-columns: repeat(6, 1fr); gap: 0; position: relative; }
+.stages::before { content: ""; position: absolute; left: 0; right: 0; top: 1.15rem; height: 2px; background: var(--line); }
+.stages li { position: relative; }
+.stage {
+  all: unset; box-sizing: border-box; cursor: pointer; display: flex; flex-direction: column; align-items: flex-start; gap: 0.6rem;
+  width: 100%; padding-right: 0.5rem; font: 600 0.98rem/1.25 var(--body); color: var(--muted);
+}
+.stage:focus-visible { outline: 3px solid var(--tang); outline-offset: 4px; border-radius: 6px; }
+.stage .dot {
+  width: 2.3rem; height: 2.3rem; border-radius: 50%; background: var(--bg); border: 2px solid var(--line);
+  display: grid; place-items: center; position: relative; z-index: 1; transition: background 0.2s, border-color 0.2s, transform 0.2s;
+}
+.stage .dot::after { content: ""; width: 0.7rem; height: 0.7rem; border-radius: 50%; background: var(--line); transition: background 0.2s; }
+.stage:hover { color: var(--ink); }
+.stage[aria-selected="true"] { color: var(--ink); }
+.stage[aria-selected="true"] .dot { border-color: var(--teal); background: var(--teal-soft); transform: scale(1.08); }
+.stage[aria-selected="true"] .dot::after { background: var(--teal); }
+.panel {
+  border-left: 4px solid var(--tang); padding: 0.25rem 0 0.25rem 1.5rem; max-width: 46rem; min-height: 11.5rem;
+}
+.panel h3 { font: 700 1.6rem/1.15 var(--head); margin: 0 0 0.75rem; letter-spacing: -0.015em; }
+.panel ul { margin: 0 0 1rem; padding-left: 1.15rem; }
+.panel li { margin-bottom: 0.35rem; }
+.panel .where { color: var(--muted); font-size: 0.95rem; margin: 0; }
+
+/* experience */
+.roles { list-style: none; margin: 0; padding: 0; }
+.role { display: grid; grid-template-columns: 11rem 1fr; gap: 0 2.5rem; padding: 2rem 0; border-top: 1px solid var(--line); }
+.role:last-child { border-bottom: 1px solid var(--line); }
+.when { color: var(--muted); font-size: 0.95rem; padding-top: 0.35rem; }
+.role h3 { font: 700 1.5rem/1.2 var(--head); letter-spacing: -0.015em; margin: 0; }
+.role .org { color: var(--teal); font-weight: 600; margin: 0.15rem 0 1rem; }
+.role ul { margin: 0; padding-left: 1.15rem; }
+.role li { margin-bottom: 0.4rem; max-width: 42rem; }
+.role .now { display: inline-block; margin-left: 0.5rem; font: 600 0.8rem/1 var(--body); background: var(--teal); color: var(--on-teal); padding: 0.3rem 0.6rem; border-radius: 999px; vertical-align: middle; }
+
+/* skills */
+.skills { display: grid; grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); gap: 2rem 2.5rem; }
+.skills h3 { font: 700 1.15rem/1.2 var(--head); margin: 0 0 0.6rem; }
+.skills ul { list-style: none; margin: 0; padding: 0; }
+.skills li { padding: 0.35rem 0; border-bottom: 1px solid var(--line); }
+
+/* two-column info */
+.cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr)); gap: 3rem; }
+.plain { list-style: none; margin: 0; padding: 0; }
+.plain li { padding: 0.7rem 0; border-top: 1px solid var(--line); }
+.plain li:last-child { border-bottom: 1px solid var(--line); }
+.plain small { display: block; color: var(--muted); font-size: 0.92rem; }
+h3.h { font: 700 1.3rem/1.2 var(--head); margin: 0 0 1rem; }
+
+/* contact */
+.contact { background: var(--teal); color: var(--on-teal); }
+.contact h2 { color: var(--on-teal); }
+.contact a.big { display: inline-block; font: 700 clamp(1.4rem, 5vw, 2.6rem)/1.15 var(--head); letter-spacing: -0.02em; word-break: break-word; text-decoration-thickness: 3px; text-underline-offset: 6px; }
+.contact .links { display: flex; gap: 0.5rem 2rem; flex-wrap: wrap; margin-top: 1.5rem; font-weight: 500; }
+.contact :focus-visible { outline-color: var(--on-teal); }
+footer { padding: 1.5rem 0 2rem; color: var(--muted); font-size: 0.9rem; }
+
+@media (max-width: 760px) {
+  .stages { grid-template-columns: repeat(2, 1fr); gap: 1.25rem 0.5rem; }
+  .stages::before { display: none; }
+  .role { grid-template-columns: 1fr; gap: 0.25rem; }
+  .when { padding-top: 0; }
+  .panel { min-height: 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  * { transition: none !important; }
+}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <header class="top">
+    <a class="mark" href="#top">Faryal Dar</a>
+    <nav aria-label="Sections">
+      <a href="#focus">What I do</a>
+      <a href="#cycle">How I hire</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#background">Background</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <div class="hero">
+      <h1>Faryal Dar</h1>
+      <p class="lede">HR professional in Karachi. I do recruitment, attendance management, event coordination and performance management support.</p>
+      <div class="cta">
+        <a class="btn primary" href="mailto:faryald28@gmail.com">Email Faryal</a>
+        <a class="btn ghost" href="https://www.linkedin.com/in/faryal-dar" target="_blank" rel="noopener noreferrer">View LinkedIn</a>
+
+      </div>
+      <dl class="facts">
+        <div><dt>Now</dt><dd>Assistant Manager, HR at Markematics</dd></div>
+        <div><dt>Experience</dt><dd>4+ years across market research, IT and BPO</dd></div>
+        <div><dt>Education</dt><dd>Master of Public Administration, University of Karachi</dd></div>
+      </dl>
+    </div>
+  </main>
+</div>
+
+<section class="focus" id="focus" aria-labelledby="focus-h">
+  <div class="wrap">
+    <h2 id="focus-h">What I do</h2>
+    <div class="focus-grid">
+      <div>
+        <h3>Recruitment</h3>
+        <p>Full-cycle hiring: job postings, screening, interviews, selection, onboarding and documentation.</p>
+      </div>
+      <div>
+        <h3>Attendance management</h3>
+        <p>Tracking attendance and leave through MIS, with accurate reports for management.</p>
+      </div>
+      <div>
+        <h3>Event planning coordination</h3>
+        <p>Coordinating team-building activities, celebrations, town halls and recognition programs.</p>
+      </div>
+      <div>
+        <h3>Performance management support</h3>
+        <p>Supporting the appraisal cycle: collecting feedback, compiling reports and facilitating discussions.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cycle" id="cycle" aria-labelledby="cycle-h">
+  <div class="wrap">
+    <h2 id="cycle-h">How I run the hiring cycle</h2>
+    <p class="sub">I own recruitment from the first job post to the first appraisal. Select a stage to see what I do at each step.</p>
+
+    <ol class="stages" role="tablist" aria-label="Hiring cycle stages" id="stages"></ol>
+    <div class="panel" id="panel" role="tabpanel" aria-live="polite"></div>
+  </div>
+</section>
+
+<div class="wrap">
+  <section id="experience" aria-labelledby="exp-h">
+    <h2 id="exp-h">Experience</h2>
+    <p class="sub">Four HR roles across three industries, newest first.</p>
+    <ol class="roles">
+      <li class="role">
+        <div class="when">Feb 2025 – present</div>
+        <div>
+          <h3>Assistant Manager, HR <span class="now">Current</span></h3>
+          <p class="org">Markematics Pvt Ltd, market research firm</p>
+          <ul>
+            <li>Own full-cycle recruitment across departments: postings, screening, interviews, selection, onboarding and documentation.</li>
+            <li>Build employer branding through social media, career fairs and university partnerships to strengthen candidate pipelines.</li>
+            <li>Roll out and enforce HR policies, and track attendance and leave through MIS for accurate management reporting.</li>
+            <li>Handle grievances with discretion, working with managers to resolve conflicts fairly and promptly.</li>
+            <li>Plan internal events such as team-building activities, celebrations and town halls.</li>
+            <li>Support the performance appraisal cycle end to end, from feedback collection to appraisal discussions.</li>
+          </ul>
+        </div>
+      </li>
+      <li class="role">
+        <div class="when">Nov 2024 – Jan 2025</div>
+        <div>
+          <h3>HR Manager</h3>
+          <p class="org">Expertizo, IT firm</p>
+          <ul>
+            <li>Led full-cycle recruitment for technical roles and wrote job descriptions tailored to technical hiring.</li>
+            <li>Coordinated onboarding: orientation, documentation and training for new hires.</li>
+            <li>Served as first point of contact for employee concerns and strengthened management–employee communication.</li>
+            <li>Supported goal-setting, salary structures, bonuses and compensation planning.</li>
+            <li>Organized team-building activities, company events and recognition programs.</li>
+          </ul>
+        </div>
+      </li>
+      <li class="role">
+        <div class="when">Oct 2023 – Feb 2024</div>
+        <div>
+          <h3>HR Executive</h3>
+          <p class="org">Sprout Worldwide, BPO firm</p>
+          <ul>
+            <li>Managed recruitment end to end: job design, postings, sourcing, interviews and onboarding.</li>
+            <li>Resolved internal and external HR queries and kept employee data and records accurate.</li>
+            <li>Supported performance evaluations and contributed to succession planning and retention strategy.</li>
+            <li>Managed attendance records, payroll support, and budget-related activities.</li>
+          </ul>
+        </div>
+      </li>
+      <li class="role">
+        <div class="when">Dec 2017 – Apr 2018</div>
+        <div>
+          <h3>HR Assistant</h3>
+          <p class="org">HMI Ventures, umbrella organization for Homechef, Alkimiya Labs and Prongo</p>
+          <ul>
+            <li>Supported recruitment by posting roles on social media and job boards, screening applications and scheduling interviews.</li>
+            <li>Maintained internal employee databases and prepared HR documentation and daily activity reports.</li>
+            <li>Supported HR policy implementation and employee engagement activities.</li>
+          </ul>
+        </div>
+      </li>
+    </ol>
+  </section>
+
+  <section id="skills" aria-labelledby="skills-h">
+    <h2 id="skills-h">Skills</h2>
+    <p class="sub">What I work with every day.</p>
+    <div class="skills">
+      <div>
+        <h3>Talent acquisition</h3>
+        <ul>
+          <li>Full-cycle recruitment</li>
+          <li>Job descriptions and postings</li>
+          <li>Employer branding</li>
+          <li>Onboarding and offboarding</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Employee relations</h3>
+        <ul>
+          <li>Grievance handling</li>
+          <li>Employee engagement</li>
+          <li>Employee retention</li>
+          <li>Succession planning</li>
+        </ul>
+      </div>
+      <div>
+        <h3>HR operations</h3>
+        <ul>
+          <li>HR policy and compliance</li>
+          <li>Attendance and leave management</li>
+          <li>Payroll support</li>
+          <li>HR documentation and reporting</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Performance and pay</h3>
+        <ul>
+          <li>Performance management</li>
+          <li>Compensation and benefits</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Tools</h3>
+        <ul>
+          <li>Microsoft Word, Excel, PowerPoint, Access</li>
+          <li>Google Drive and Calendar</li>
+          <li>Trello, Zoho, Slack, MIS</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="background" aria-labelledby="bg-h">
+    <h2 id="bg-h">Background</h2>
+    <p class="sub">Education, research and the learning behind the work.</p>
+    <div class="cols">
+      <div>
+        <h3 class="h">Education</h3>
+        <ul class="plain">
+          <li>Master of Public Administration<small>University of Karachi, 1st Division</small></li>
+          <li>Bachelor of Commerce<small>Government College for Women, 2nd Division</small></li>
+          <li>Intermediate (I.Com)<small>Government College for Women, 2nd Division</small></li>
+          <li>Matriculation<small>Brooks Grammar School, P.E.C.H.S., Grade B</small></li>
+        </ul>
+
+        <h3 class="h" style="margin-top:2.5rem">Internships</h3>
+        <ul class="plain">
+          <li>HMI Ventures<small>30 Oct 2017 to 30 Nov 2017</small></li>
+          <li>Dubai Islamic Bank<small>26 Jul 2016 to 2 Sep 2016</small></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="h">Research and projects</h3>
+        <ul class="plain">
+          <li>Effects of Political Dynamics in Organizations on Human Resource Management<small>Research report</small></li>
+          <li>Launching of New Brand<small>Research report</small></li>
+          <li>Performance Management System of SBT Japan<small>Project report</small></li>
+          <li>Brand Management of Gourmet<small>Project report</small></li>
+          <li>Analysis of Training Need Assessment<small>Assignment</small></li>
+        </ul>
+
+        <h3 class="h" style="margin-top:2.5rem">Seminars and conferences</h3>
+        <ul class="plain">
+          <li>International Conference on Managing Megacities, 2016<small>3-day seminar</small></li>
+          <li>Governance and Women Empowerment<small>AEIRC</small></li>
+          <li>Supply Chain Management<small>ISCEA</small></li>
+          <li>Career Development<small>Training &amp; Consultancy Services</small></li>
+          <li>Entrepreneurship Hunt 2015<small>Shaheen Air</small></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</div>
+
+<section class="contact" id="contact" aria-labelledby="contact-h">
+  <div class="wrap">
+    <h2 id="contact-h">Hiring, or need HR support?</h2>
+    <p style="max-width:34rem;margin:0 0 1.5rem;">Write to me and I’ll reply. I’m based in Karachi, Pakistan.</p>
+    <a class="big" href="mailto:faryald28@gmail.com">faryald28@gmail.com</a>
+    <div class="links">
+      <a href="tel:+923131773561">+92 313 1773561</a>
+      <a href="https://linkedin.com/in/faryal-dar" rel="noopener">linkedin.com/in/faryal-dar</a>
+      <a href="https://faryal-dar.vercel.app/" rel="noopener">faryal-dar.vercel.app</a>
+    </div>
+  </div>
+</section>
+
+<div class="wrap"><footer>Faryal Dar · Karachi, Pakistan</footer></div>
+
+<script>
+(function () {
+  var stages = [
+    { name: "Post", title: "Write the role and get it seen",
+      points: ["Write job descriptions and postings, including for technical roles.",
+               "Post on social media and job boards.",
+               "Build employer branding through career fairs and university partnerships to widen the candidate pipeline."],
+      where: "Markematics, Expertizo, Sprout Worldwide, HMI Ventures" },
+    { name: "Screen", title: "Source and screen candidates",
+      points: ["Source candidates and screen applications.",
+               "Schedule and run interviews with hiring managers."],
+      where: "Markematics, Expertizo, Sprout Worldwide, HMI Ventures" },
+    { name: "Select", title: "Choose, offer and document",
+      points: ["Support selection decisions across departments.",
+               "Handle offers and the documentation that follows."],
+      where: "Markematics, Expertizo" },
+    { name: "Onboard", title: "Get new hires ready",
+      points: ["Run orientation, documentation and training for new joiners.",
+               "Keep employee records and data accurate from day one."],
+      where: "Markematics, Expertizo, Sprout Worldwide" },
+    { name: "Engage", title: "Keep people connected and heard",
+      points: ["Plan team-building activities, celebrations, town halls and recognition programs.",
+               "Handle grievances with discretion and work with managers to resolve conflicts fairly.",
+               "Roll out HR policies and track attendance and leave."],
+      where: "Markematics, Expertizo, Sprout Worldwide" },
+    { name: "Appraise", title: "Support performance and pay",
+      points: ["Run the appraisal cycle end to end: collect feedback, compile reports, facilitate discussions.",
+               "Support goal-setting and performance expectations.",
+               "Assist with salary structures, bonuses and compensation planning."],
+      where: "Markematics, Expertizo, Sprout Worldwide" }
+  ];
+
+  var list = document.getElementById("stages");
+  var panel = document.getElementById("panel");
+  var buttons = [];
+
+  function select(i, focus) {
+    var s = stages[i];
+    buttons.forEach(function (b, j) {
+      b.setAttribute("aria-selected", j === i ? "true" : "false");
+      b.tabIndex = j === i ? 0 : -1;
+    });
+    panel.setAttribute("aria-labelledby", "tab-" + i);
+    var html = "<h3>" + s.title + "</h3><ul>";
+    s.points.forEach(function (p) { html += "<li>" + p + "</li>"; });
+    html += "</ul><p class=\"where\">Done at: " + s.where + "</p>";
+    panel.innerHTML = html;
+    if (focus) buttons[i].focus();
+  }
+
+  stages.forEach(function (s, i) {
+    var li = document.createElement("li");
+    li.setAttribute("role", "presentation");
+    var b = document.createElement("button");
+    b.type = "button";
+    b.className = "stage";
+    b.id = "tab-" + i;
+    b.setAttribute("role", "tab");
+    b.innerHTML = "<span class=\"dot\" aria-hidden=\"true\"></span><span>" + s.name + "</span>";
+    b.addEventListener("click", function () { select(i, false); });
+    b.addEventListener("keydown", function (e) {
+      var n = stages.length;
+      if (e.key === "ArrowRight" || e.key === "ArrowDown") { e.preventDefault(); select((i + 1) % n, true); }
+      if (e.key === "ArrowLeft" || e.key === "ArrowUp") { e.preventDefault(); select((i - 1 + n) % n, true); }
+      if (e.key === "Home") { e.preventDefault(); select(0, true); }
+      if (e.key === "End") { e.preventDefault(); select(n - 1, true); }
+    });
+    li.appendChild(b);
+    list.appendChild(li);
+    buttons.push(b);
+  });
+  select(0, false);
+})();
+</script>
+</body>
+</html>
